@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDtbUTEiq7dlI1QzL7MmGXY1-0iYAv9opU",
+              authDomain: "fir-bythenetninja.firebaseapp.com",
+              databaseURL: "https://fir-bythenetninja.firebaseio.com",
+              projectId: "fir-bythenetninja",
+              storageBucket: "fir-bythenetninja.appspot.com",
+              messagingSenderId: "660474538461",
+              appId: "1:660474538461:web:d1e402ce127fefbb"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore()
+            db.settings( {timestampsInSnapshots: true});
+          </script>
+        <script src="app.js"></script>
+    </body>
+</html>
